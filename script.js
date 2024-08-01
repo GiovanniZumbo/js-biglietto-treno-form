@@ -60,8 +60,8 @@ submitButton.addEventListener('click', function (e) {
 
     // * Chiedere l'età del passeggero. / Request traveller age
 
-    // const age = parseInt(ageInput.value);
-    // console.log('age', age);
+    const age = parseInt(ageInput.value);
+    console.log('age', age);
 
 
     // # PROCESSING
