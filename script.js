@@ -24,9 +24,12 @@ Recupero gli elementi dal DOM / Get elements from the DOM
 
 const totalElement = document.getElementById('total')
 const discountElement = document.getElementById('discount')
+const fullNameElement = document.getElementById('passenger-name')
 
 // ? Form
-
+const fullNameInput = document.getElementById('fullname')
+// const fullName = fullNameInput.value.trim()
+// console.log(fullName)
 const distanceInput = document.getElementById('distance')
 const ageInput = document.getElementById('age')
 
@@ -72,6 +75,11 @@ submitButton.addEventListener('click', function (e) {
         alert('I dati inseriti non sono validi')
     } else {
 
+        // * Creare la variabile per il nome del passeggero / Make a var for passenger's name
+
+        const fullName = fullNameInput.value.trim()
+        console.log('fullName', fullName)
+
         // * Calcolare il prezzo del biglietto senza sconto. / Calculate full price ticket
 
         const ticketPrice = parseInt(distance * priceUnit);
@@ -101,6 +109,8 @@ submitButton.addEventListener('click', function (e) {
         // * Stampare il risultato / Output the result
 
         totalElement.innerHTML = message + finalPrice.toFixed(2);
+
+        fullNameElement.innerHTML = `Nome passeggero: ${fullName}`;
 
     }
 
