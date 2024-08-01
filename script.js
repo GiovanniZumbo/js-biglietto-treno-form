@@ -29,7 +29,9 @@ const discountElement = document.getElementById('discount')
 
 const distanceInput = document.getElementById('distance')
 const ageInput = document.getElementById('age')
+
 const submitButton = document.getElementById('submit-button')
+const deleteButton = document.getElementById('delete-button')
 
 // * Creare una variabile per il costo per chilometro / Make a price/distance var
 const priceUnit = 0.21;
@@ -58,8 +60,8 @@ submitButton.addEventListener('click', function (e) {
 
     // * Chiedere l'età del passeggero. / Request traveller age
 
-    const age = parseInt(ageInput.value);
-    console.log('age', age);
+    // const age = parseInt(ageInput.value);
+    // console.log('age', age);
 
 
     // # PROCESSING
@@ -103,3 +105,8 @@ submitButton.addEventListener('click', function (e) {
     }
 
 })
+
+deleteButton.addEventListener('click', function () {
+    form.reset();
+}
+)

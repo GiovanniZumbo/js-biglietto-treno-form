@@ -20,17 +20,18 @@
 <body>
     <main>
 
-        <form>
+        <form id="ticket-form">
             <input type="number" id="distance" placeholder="Inserisci la distanza (km)">
 
             <select class="form-select" id="age">
                 <option selected value="selected">Seleziona la fascia d'età</option>
-                <option value="underAge">Under 18</option>
-                <option value="adult">Adulto</option>
-                <option value="elder">Over 65</option>
+                <option value="underAge" id="under-age">Under 18</option>
+                <option value="adult" id="adult">Adulto</option>
+                <option value="elder" id="elder">Over 65</option>
             </select>
 
             <button id="submit-button"> Invia Dati </button>
+            <button id="delete-button"> Annulla </button>
         </form>
 
         <div>
