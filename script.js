@@ -15,6 +15,7 @@ Stampare il risultato / Output the result
 /* MILESTONE 1
 Recupero gli elementi dal DOM / Get elements from the DOM
 
+
 */
 
 // # STAGING
@@ -44,15 +45,7 @@ let discount = null;
 // # DATA GATHERING 
 
 
-// @ VALIDATION
-
-
-
 // # EVENT HANDLING
-
-// if (isNaN(distance) || isNaN(age) || distance <= 0 || age <= 0) {
-//     alert('I dati inseriti non sono validi')
-// } else {
 
 submitButton.addEventListener('click', function (e) {
     e.preventDefault();
@@ -70,6 +63,9 @@ submitButton.addEventListener('click', function (e) {
 
 
     // # PROCESSING
+
+    // @VALIDATION
+
     if (isNaN(distance) || isNaN(age) || distance <= 0 || age <= 0) {
         alert('I dati inseriti non sono validi')
     } else {
